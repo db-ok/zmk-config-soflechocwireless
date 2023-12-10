@@ -67,18 +67,18 @@
         };
 
         bt_layer {
-            // -----------------------------------------------------------                                              ------------------------------------------
-            // |BTCLR | BT0      | BT1     |  BT2    |  BT3    |  BT4    |                                              |      |      |       |      |     |     |
-            // |OUTTOG|          |         |         |         |         |                                              |      |      |       |      |     |     |
-            // |      |          |         |         |         |         |                                              |      |      |       |      |     |     |
-            // |      |          |         |         |         |         |      |                                |      |      |      |       |      |     |     |
-            //                   |         |         |         |         |      |                                |      |      |      |       |      |
+            // ---------------------------------------------------------------                                               ------------------------------------------
+            // | BTCLR    | BT0      | BT1     |  BT2    |  BT3    |  BT4    |                                               |      |      |       |      |     |     |
+            // | OUTTOG   |          |         |         |         |         |                                               |      |      |       |      |     |     |
+            // |          |          |         |         |         |         |                                               |      |      |       |      |     |     |
+            // |          |          |         |         |         |         |      |                                 |      |      |      |       |      |     |     |
+            //                       |         |         |         |         |      |                                 |      |      |      |       |      |
                         bindings = <
-            &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &trans &trans &trans &trans &trans &trans
-            &out OUT_TOG &trans        &trans            &trans        &trans        &trans                              &trans &trans &trans &trans &trans &trans
-            &trans       &trans        &trans            &trans        &trans        &trans                              &trans &trans &trans &trans &trans &trans
-            &trans       &trans        &trans            &trans        &trans        &trans        &trans         &trans &trans &trans &trans &trans &trans &trans
-                                       &ext_power EP_TOG &trans        &trans        &trans        &trans         &trans &trans &trans &trans &trans
+            &bt BT_CLR     &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                          &trans  &trans  &trans  &trans  &trans  &trans
+            &out OUT_TOG   &trans        &trans             &trans        &trans        &trans                                &trans  &trans  &trans  &trans  &trans  &trans
+            &trans         &trans        &trans             &trans        &trans        &trans                                &trans  &trans  &trans  &trans  &trans  &trans
+            &trans         &trans        &trans             &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                         &ext_power EP_TOG  &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans
                         >;
             
             sensor-bindings = <&inc_dec_kp LS(TAB) TAB &inc_dec_kp C_VOL_DN C_VOL_UP>;
