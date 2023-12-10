@@ -11,6 +11,17 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
+
+    behaviors {
+        altf4: alt_f4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_F4";
+            #binding-cells = <0>;
+            bindings = <&kp N4>, <&kp LA(F4)>;
+            mods = <(MOD_LALT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
